@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+.contenedor1{
+  margin-top: 5%;
+width: 30%;
+margin-left: 36%;
+
+
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* psicologo */
+.container-psico{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.container-psico hr{
+	color: #00324D;
+	background-color: #5eaee0;
+}
+.bg-card{
+	border: 1px solid #38596b;
+	box-shadow: 0px 2px 2px 2px #589db3;
+}
+.btn-cita{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+body, p {
+	color: #777; 
+	font: 400 1rem/1.75rem "Open Sans", sans-serif;
+}
+
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.5rem 2.375rem 1.5rem 2.375rem;
+	border: 0.125rem solid #00324D;
+	border-radius: 2rem;
+	background-color: #00324D;
+	color: #fff;
+	font: 700 0.875rem/0 "Open Sans", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+	border: 0.125rem solid #00324D;
+	background-color: transparent;
+	color: #00324D;
+	text-decoration: none;
+}
+
+.btn-solid-lg .fab {
+	margin-right: 0.5rem;
+	font-size: 1.25rem;
+	line-height: 0;
+	vertical-align: top;
+}
+
+.btn-solid-lg .fab.fa-google-play {
+	font-size: 1rem;
+}
