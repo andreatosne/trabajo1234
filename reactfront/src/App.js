@@ -7,7 +7,7 @@ import CompCreateBlog from './blog/CreateBlogs';
 // import CompCreateBlo from './blog/por';
 import CompTabla from './blog/tabla'
 import  Comppsicologo from './blog/psicologos'
-import  CompVale from './blog/validator'
+
 import CopiaaPrueba from './blog/Validator2'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -23,10 +23,10 @@ function App() {
       <Routes>
         <Route path='/'element={<CompShowBlogs />}/>
         <Route path='/create'element={<CompCreateBlog />}/>
-        {/* <Route path='/si'element={<CompCreateBlo />}/> */}
+        
         <Route exact path='/tablita' element={<CompTabla/>}/>
         <Route exact path='/psicologo' element={< Comppsicologo/>}/>
-        <Route exact path='/validator' element={<  CompVale/>}/>
+     
         
         <Route exact path='/validator2' element={<CopiaaPrueba/>}/>
         

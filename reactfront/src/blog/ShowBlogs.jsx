@@ -12,6 +12,9 @@ const URI =' http://localhost:8000/blogs/'
 //useEffect es utilizar efecto 
 
 const CompShowBlogs = () =>{
+
+
+  //set blog para actualizar
     const [blogs,setBlog] = useState([])
     useEffect ( () => {
     getBlogs()
@@ -20,7 +23,7 @@ const CompShowBlogs = () =>{
 
 //procedimiento para mostrar todos los blogs 
 const getBlogs = async ()=>{
-
+//axios devuelve 
 const res = await axios.get(URI)
 setBlog(res.data)//se obtiene una respuesta 
 }

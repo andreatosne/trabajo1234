@@ -12,8 +12,7 @@ const URI ='http://localhost:8000/blogs/'
 const CopiaaPrueba =()=>{
 
          
-
-
+//usesate devuelve el valor  y una funcion para actualizarlo
      const [nombre,setNombre]=useState('')
      
 
@@ -21,23 +20,17 @@ const CopiaaPrueba =()=>{
      const [ficha,setFicha]=useState('')
      const [telefono,setTelefono]=useState('')
      const [fecha,setFecha]=useState('')
-     const [error,setError]=useState(false)
+
      const navigate =useNavigate()
      
      //procedimiento guardar
 
      const store =async (e) =>
      {
-       
-        if(nombre.length ==0 ){
-                setError(true)
-                alert('mal')
-        }
-       
+               
+{ e.preventDefault() 
 
-
-        
-{ e.preventDefault()
+        //envia datos
          await axios.post(URI,{nombre: nombre,
 ficha:ficha,telefono:telefono,fecha:fecha })
      navigate('/tablita')
@@ -50,7 +43,10 @@ return(
         
       <h3>solicitar acompañamiento</h3>
 <center>
-      <form onSubmit={store} > 
+
+     {/*evita que un formulario sea enviado si determinadas condiciones no son cumplidas.*/}
+     
+     <form onSubmit={store} > 
       
       <div className="mb-3" >
        
@@ -69,8 +65,7 @@ onChange={(e)=>setNombre(e.target.value)}//capturando el valor que se encuentra 
         
         />
       </div>
-      {error?
-      <label className="form-label mt-4" htmlFor="NOMBRE">nombre completo </label>:""}
+      
       
      <div className="mb-3" >
       

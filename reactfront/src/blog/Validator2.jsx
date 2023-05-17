@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useForm } from 'react-hook-form';
 
-import react,{Component} from "react";
 
 import { useState } from "react";
 
@@ -21,7 +20,7 @@ const CopiaaPrueba =()=>{
      const [ficha,setFicha]=useState('')
      const [telefono,setTelefono]=useState('')
      const [fecha,setFecha]=useState('')
-     const [error,setError]=useState(false)
+   
      const navigate =useNavigate()
      
      //procedimiento guardar
@@ -29,12 +28,7 @@ const CopiaaPrueba =()=>{
      const store =async (e) =>
      {
        
-        if(nombre.length ==0 ){
-                setError(true)
-                alert('mal')
-        }
-       
-
+      
 
         
 { e.preventDefault()
@@ -69,8 +63,8 @@ onChange={(e)=>setNombre(e.target.value)}//capturando el valor que se encuentra 
         
         />
       </div>
-      {error?
-      <label className="form-label mt-4" htmlFor="NOMBRE">nombre completo </label>:""}
+ 
+      <label className="form-label mt-4" htmlFor="NOMBRE">nombre completo </label>:
       
      <div className="mb-3" >
       
@@ -101,7 +95,7 @@ onChange={(e)=>setTelefono(e.target.value)}//capturando el valor que se encuentr
         />
      </div> 
      {/* <label className="form-label" htmlFor="phone">telefono</label> */}
-     <label className="form-label" htmlFor="FECHA" >fecha para agwndar la solicitud</label>
+     <label className="form-label" htmlFor="FECHA" >fecha para agendar la solicitud</label>
      
      <div className="mb-3" >
       

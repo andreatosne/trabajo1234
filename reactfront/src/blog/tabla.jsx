@@ -52,6 +52,7 @@ return(
 <th>fecha</th>
 </tr>
 </thead>
+{/* se obtiene el arreglo completo */}
 <tbody> {blogs.map((blog)=>(
 
     <tr key= {blog.id }>
